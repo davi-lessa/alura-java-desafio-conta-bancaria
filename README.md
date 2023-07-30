@@ -2,9 +2,9 @@
 # Desafio Alura: conta bancária - curso Primeiro Projeto em Java
 
 A proposta é construir uma aplicação na qual o cliente de uma conta bancária pode consultar seu saldo e fazer/receber transferências.
-## Em que consiste o desafio
+## Planejando o desafio
 
-A proposta é iniciarmos os dados do cliente como um extrato.
+Devemos iniciar imprimindo os dados do cliente como um extrato.
 
 ```
 ***************************
