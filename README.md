@@ -38,6 +38,10 @@ Digite a opção desejada:
 - Cliente impedido de transferir valor maior que o saldo.
 - Operações em loop
 - Doubles com 2 casas decimais
+
+## Demonstração
+![](https://github.com/davi-lessa/alura-java-desafio-conta-bancaria/blob/main/src/assets/video-demonstrativo.gif)
+
 ## Fazendo uma cópia do projeto
 
 Clone esse repositório com o comando abaixo:
