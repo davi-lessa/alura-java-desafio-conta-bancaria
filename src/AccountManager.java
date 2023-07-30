@@ -7,7 +7,7 @@ public class AccountManager {
 
     public AccountManager() {
         this.customer = new Customer("José", 2500.00);
-        this.scanner = new Scanner(System.in);;
+        this.scanner = new Scanner(System.in);
 
         System.out.printf("""
                 *******************************
@@ -75,7 +75,7 @@ public class AccountManager {
                     if (valueToSend == 0) break;
                     this.sendMoney(to, valueToSend);
                 }
-                case 4 -> this.running = false;
+                case 4 -> this.terminateSession();
                 default -> System.out.printf("Opção inválida!%n");
             }
         }

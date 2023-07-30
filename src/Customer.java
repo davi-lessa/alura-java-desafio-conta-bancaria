@@ -1,8 +1,8 @@
 public class Customer {
     private final String name;
-    private double balance = 2500;
+    private double balance;
     private final String accountType;
-    private String currency = "R$";
+    private final String currency;
 
     public Customer (String name, double initialBalance){
         this.name = name;
