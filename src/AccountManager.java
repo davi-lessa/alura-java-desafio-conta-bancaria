@@ -2,12 +2,11 @@ import java.util.Scanner;
 
 public class AccountManager {
     private final Customer customer;
-    private final Scanner scanner;
     private boolean running = true;
 
     public AccountManager() {
         this.customer = new Customer("José", 2500.00);
-        this.scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.printf("""
                 *******************************
@@ -31,7 +30,7 @@ public class AccountManager {
                 Digite a opção desejada:
                 """);
 
-            int insertedCommand = this.scanner.nextInt();
+            int insertedCommand = scanner.nextInt();
 
             switch (insertedCommand) {
                 case 1 -> this.getBalance();
@@ -43,14 +42,14 @@ public class AccountManager {
                     // Definindo de quem vai enviar
                     System.out.println("Digite o nome de quem você planeja receber esse valor. ( 0 para retornar ).");
                     while (from.isEmpty()) {
-                        from = this.scanner.next();
+                        from = scanner.next();
                     }
                     if (from.equals("0")) break;
 
                     // Definindo o valor a ser recebido
                     System.out.println("Insira o valor que deseja receber. ( 0 para retornar; use vírgula ).");
                     while (valueToReceive == null || valueToReceive < 0) {
-                        valueToReceive = this.scanner.nextDouble();
+                        valueToReceive = scanner.nextDouble();
                     }
                     if (valueToReceive == 0) break;
                     this.receiveMoney(from, valueToReceive);
@@ -63,14 +62,14 @@ public class AccountManager {
                     // Definindo de quem vai receber
                     System.out.println("Digite o nome de irá receber o valor. ( 0 para retornar ).");
                     while (to.isEmpty()) {
-                        to = this.scanner.next();
+                        to = scanner.next();
                     }
                     if (to.equals("0")) break;
 
                     // Definindo o valor a ser enviado
                     System.out.println("Insira o valor que deseja enviar. ( 0 para retornar; use vírgula ).");
                     while (valueToSend == null || valueToSend < 0) {
-                        valueToSend = this.scanner.nextDouble();
+                        valueToSend = scanner.nextDouble();
                     }
                     if (valueToSend == 0) break;
                     this.sendMoney(to, valueToSend);
