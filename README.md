@@ -42,7 +42,7 @@ Digite a opção desejada:
 
 Clone esse repositório com o comando abaixo:
 ```
-git clone https://github.com/davi-lessa/react-vite-boilerplate.git
+git clone https://github.com/davi-lessa/alura-java-desafio-conta-bancaria.git
 ```
 ## Entrando em contato
 
